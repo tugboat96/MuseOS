@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "MuseOS: Build All (zig build all)",
+      "type": "shell",
+      "command": "zig build all",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "MuseOS: Build Kernel (seL4 & Assembly)",
+      "type": "shell",
+      "command": "zig build kernel",
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "MuseOS: Build System Services (Zig)",
+      "type": "shell",
+      "command": "zig build services",
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "MuseOS: Build User-Space (Rust)",
+      "type": "shell",
+      "command": "zig build user-space",
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

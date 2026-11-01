@@ -1,0 +1,24 @@
+{
+	"[zig]": {
+		"editor.formatOnSave": true
+	},
+	"[rust]": {
+		"editor.formatOnSave": true
+	},
+	"rust-analyzer.cargo.target": "x86_64-unknown-none",
+	"files.associations": {
+		"*.S": "assembly"
+	},
+	"files.watcherExclude": {
+		"**/zig-cache/**": true,
+		"**/zig-out/**": true,
+		"**/target/**": true,
+		"**/kernel/build/**": true
+	},
+	"search.exclude": {
+		"**/zig-cache": true,
+		"**/zig-out": true,
+		"**/target": true,
+		"**/kernel/build": true
+	}
+}
