@@ -29,7 +29,7 @@ MuseOS is a high-performance, modular operating system engineered specifically f
 │                    Bare-Metal Core (Assembly & C Header)               │
 │   ┌─────────────────────┐  ┌─────────────────────┐  ┌──────────────┐   │
 │   │       boot.S        │  │     block_scan.S    │  │    idt.S     │   │
-│   │ (Multiboot2 Entry)  │  │ (AVX2 Bit-Scanner) │  │ (IDT Traps)  │   │
+│   │ (Multiboot2 Entry)  │  │ (AVX2 Bit-Scanner). │  │ (IDT Traps)  │   │
 │   └─────────────────────┘  └─────────────────────┘  └──────────────┘   │
 └────────────────────────────────────────────────────────────────────────┘
 ```
