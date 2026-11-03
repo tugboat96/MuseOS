@@ -62,7 +62,7 @@ pub const PagingManager = struct {
     }
 
     /// Activate this PML4 in the CPU by updating CR3
-    pub fn activate(self: const PagingManager) void {
+    pub fn activate(self: PagingManager) void {
         loadCr3(self.pml4_phys);
     }
 
@@ -163,7 +163,7 @@ pub const PagingManager = struct {
     }
 
     /// Translate virtual address to physical address
-    pub fn translateAddress(self: const PagingManager, virt: u64) ?u64 {
+    pub fn translateAddress(self: PagingManager, virt: u64) ?u64 {
         const pml4_idx = (virt >> 39) & 0x1FF;
         const pdpt_idx = (virt >> 30) & 0x1FF;
         const pd_idx = (virt >> 21) & 0x1FF;
